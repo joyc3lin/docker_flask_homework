@@ -1,0 +1,28 @@
+# docker compose version 
+version: '3'
+
+# list of different containers in the application
+services:
+
+# first flask app
+  flask_app_1:
+    # directs the image being built to Flask1's dockerfile
+    build: ./Flask1
+    # uses port 5001 for host and 5000 for container 
+    ports:
+      - "5001:5000"
+    # changes in local files will be brought to the application 
+    volumes:
+      - ./Flask1:/app
+
+  flask_app_2:
+    build: ./Flask2
+    ports:
+      - "5002:5000"
+    volumes:
+      - ./Flask2:/app
+
+
+
+
+    
