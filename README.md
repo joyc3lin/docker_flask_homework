@@ -53,7 +53,8 @@ services:
     volumes:
       - ./Flask1:/app
 ```
-+ Dockerizing with Docker Compose: <code>docker-compose up --build <code>
+
++ Dockerizing with Docker Compose: <code>docker-compose up --build </code>
     + Wait for applicatiosn to be built, this might take a while
 + The applications can be rerun with <code>docker-compose up</code>
 
